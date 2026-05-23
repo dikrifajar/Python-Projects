@@ -19,9 +19,10 @@ This project identifies the key **Car Price Drivers** — including brand, milea
 | Language | Python 3.10+ |
 | Data Manipulation | `pandas` |
 | Visualization | `matplotlib`, `seaborn` |
+| Statistical | `statsmodels`,`patsy` |
 | IDE | VS Code |
 
-> Built as a **Pure Python Script** for easy scheduling and periodic report automation.
+
 
 ---
 
