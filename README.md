@@ -70,6 +70,11 @@ Shows how quickly asset value declines with age, broken down by vehicle conditio
    Premium brands like Tesla and Mercedes retain high value but serve a narrower market. An optimal inventory mix is roughly **70% high-volume brands** (e.g., Honda, Ford) and **30% premium brands** to balance cash flow with margin.
 
 ---
+Kesimpulan Praktis
+1. Fuel Type dan Engine Size punya pengaruh nyata terhadap harga, terutama bila dilihat dalam kombinasi.
+2. Condition tidak signifikan → harga mobil baru tidak otomatis lebih mahal.
+3. Mileage & Year tidak signifikan → mungkin karena dataset bias (mobil baru entry-level vs bekas premium).
+
 
 ## 🚀 Getting Started
 
