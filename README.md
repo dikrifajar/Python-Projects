@@ -61,6 +61,20 @@ Shows how quickly asset value declines with age, broken down by vehicle conditio
 
 ---
 
+## What Influences Car Prices in This Dataset?
+
+#### Regression
+<img width="1601" height="1224" alt="image" src="https://github.com/user-attachments/assets/4e661df7-c244-40a0-9104-eda568db2c40" />
+
+#### ANOVA
+
+<img width="1204" height="451" alt="image" src="https://github.com/user-attachments/assets/2dbb7b21-4bf8-4a62-a207-2a58e09890e7" />
+
+#### Insight ! 
+1. Harga lebih dipengaruhi oleh jenis bahan bakar dan ukuran mesin, bukan sekadar kondisi mobil.
+2. ANOVA menegaskan bahwa kombinasi faktor lebih penting daripada faktor tunggal. Fuel Type sendiri hampir signifikan, tapi interaksi dengan Engine Size memberi sinyal kuat.
+---
+
 ## 💡 Data-Driven Business Recommendations
 
 1. **Mileage-Based Procurement Strategy**
@@ -70,12 +84,12 @@ Shows how quickly asset value declines with age, broken down by vehicle conditio
    Premium brands like Tesla and Mercedes retain high value but serve a narrower market. An optimal inventory mix is roughly **70% high-volume brands** (e.g., Honda, Ford) and **30% premium brands** to balance cash flow with margin.
 
 ---
-Kesimpulan Praktis
-1. Fuel Type dan Engine Size punya pengaruh nyata terhadap harga, terutama bila dilihat dalam kombinasi.
-2. Condition tidak signifikan → harga mobil baru tidak otomatis lebih mahal.
-3. Mileage & Year tidak signifikan → mungkin karena dataset bias (mobil baru entry-level vs bekas premium).
+## 💡💡Kesimpulan Praktis
+1. Fuel Type and Engine Size have a real impact on price, especially when looked at in combination.
+2. Condition isn't significant → a new car isn't automatically more expensive.
+3. Mileage & Year aren't significant → maybe because the dataset is biased (entry-level new cars vs premium used ones).
 
-
+---
 ## 🚀 Getting Started
 
 ### Prerequisites
