@@ -1,51 +1,112 @@
-# Python-Projects
-# 🚗 Car Price Analytics: Memahami Driver Utama Penentu Harga Mobil Second & Baru
+# 🚗 Car Price Analytics: Understanding the Key Drivers of Vehicle Pricing
 
-## 📌 1. Latar Belakang & Masalah Bisnis
-Industri otomotif sekunder (mobil bekas) memiliki volatilitas harga yang sangat tinggi. Perusahaan dealer mobil seringkali kesulitan menentukan harga beli dan harga jual optimal (*pricing strategy*) yang kompetitif namun tetap menjaga margin keuntungan. 
-
-**Tujuan Proyek:**
-Proyek ini bertujuan untuk menganalisis faktor-faktor apa saja yang secara signifikan mendominasi penentuan harga kendaraan (*Car Price Drivers*) seperti pengaruh Brand, Mileage (jarak tempuh), Jenis Bahan Bakar, Transmisi, serta depresiasi harga berdasarkan tahun rilisnya.
+> Analyzing what truly determines the market price of new and used cars — built with pure Python for production-ready reporting automation.
 
 ---
 
-## 🛠️ 2. Tech Stack & Arsitektur Proyek
-Proyek ini dibangun menggunakan pendekatan **Pure Python Scripting (Production-Ready)** untuk memudahkan otomasi laporan berkala.
+## 📌 Background & Business Problem
 
-- **Bahasa:** Python 3.10+
-- **Library Utama:** `pandas` (Data Manipulation), `matplotlib` & `seaborn` (Advanced Data Visualization)
-- **IDE:** VS Code
+The used car market is notoriously volatile. Dealers frequently struggle to set competitive buy and sell prices that protect profit margins while staying attractive to buyers.
 
----
-
-## 📊 3. Ringkasan Temuan & Visualisasi Data
-*(Catatan: Grafik di bawah ini diekspor otomatis ke folder `output/` saat skrip dijalankan)*
-
-### A. Distribusi Harga Mobil Pasar
-Grafik ini digunakan untuk mengidentifikasi konsentrasi harga terbesar di pasar guna menyusun segmentasi target konsumen yang tepat (*Low, Mid, High-End*).
-![Distribusi Harga](output/1_distribusi_harga.png)
-
-### B. Analisis Segmentasi Pasar Berdasarkan Brand
-Membantu divisi pengadaan barang (*procurement*) untuk mengetahui brand mana saja yang memiliki nilai pasar premium tertinggi.
-![Harga Per Brand](output/2_harga_per_brand.png)
-
-### C. Pengaruh Jarak Tempuh (Mileage) terhadap Penurunan Harga (Depresiasi)
-Melalui analisis regresi linear sederhana ini, kita dapat menghitung persentase penurunan harga kendaraan untuk setiap kelipatan jarak tempuh tertentu.
-![Mileage vs Harga](output/3_mileage_vs_harga.png)
-
-### D. Tren Harga Berdasarkan Tahun Rilis dan Kondisi Mobil
-Analisis tren ini membantu tim penjualan mengantisipasi seberapa cepat harga aset menurun seiring bertambahnya usia kendaraan, dikelompokkan berdasarkan kondisi fisik (*New, Like New, Used*).
-![Tren Harga](output/4_tren_harga_tahunan.png)
+This project identifies the key **Car Price Drivers** — including brand, mileage, fuel type, transmission, and year-based depreciation — to support smarter, data-driven pricing decisions.
 
 ---
 
-## 💡 4. Rekomendasi Bisnis Terkait (Data-Driven Insights)
-1. **Strategi Procurement Berdasarkan Jarak Tempuh:** Mengingat tingginya tingkat depresiasi harga mobil seiring naiknya *Mileage* (sebagaimana terlihat di grafik regresi), disarankan bagi diler untuk fokus membeli mobil bekas dengan jarak tempuh di bawah batas psikologis tertentu untuk menjaga profit margin saat penjualan kembali.
-2. **Optimalisasi Portofolio Inventori:** Berdasarkan visualisasi harga per Brand, brand premium seperti Tesla/Mercedes mempertahankan nilai yang tinggi, namun memiliki pangsa pasar yang lebih mengerucut. Kombinasi inventori ideal adalah 70% Brand volume tinggi (seperti Honda/Ford) dan 30% Brand premium untuk memaksimalkan *cash flow* perputaran barang.
+## 🛠️ Tech Stack
+
+| Component | Tool |
+|---|---|
+| Language | Python 3.10+ |
+| Data Manipulation | `pandas` |
+| Visualization | `matplotlib`, `seaborn` |
+| IDE | VS Code |
+
+> Built as a **Pure Python Script** for easy scheduling and periodic report automation.
 
 ---
 
-## 🚀 5. Cara Menjalankan Proyek Ini Secara Lokal
-1. Clone repositori ini:
-   ```bash
-   git clone [https://github.com/username-anda/car-price-analysis.git](https://github.com/username-anda/car-price-analysis.git)
+## 📊 Key Findings & Visualizations
+
+> All charts are auto-exported to the `output/` folder when the script runs.
+
+### A. Market Price Distribution
+Identifies where prices are concentrated — used to define consumer segments: **Low, Mid, and High-End**.
+
+<img width="984" height="484" alt="image" src="https://github.com/user-attachments/assets/5ddf4bc3-2f9a-4c05-b0cc-b7bd67cc53b9" />
+
+
+---
+
+### B. Market Segmentation by Brand
+Helps the procurement team identify which brands command premium market value.
+
+<img width="1184" height="584" alt="image" src="https://github.com/user-attachments/assets/86a8c1b5-c2c8-4fcf-b2c6-d31e88b92000" />
+
+
+---
+
+### C. Mileage vs. Price Depreciation (Linear Regression)
+Quantifies how much a vehicle's value drops for every additional unit of mileage driven.
+
+<img width="984" height="584" alt="image" src="https://github.com/user-attachments/assets/01d0eec2-bc5d-4946-ad66-fc04d07a8dfe" />
+
+
+---
+
+### D. Price Trends by Release Year & Condition
+Shows how quickly asset value declines with age, broken down by vehicle condition: **New, Like New, and Used**.
+
+<img width="1184" height="584" alt="image" src="https://github.com/user-attachments/assets/72720db5-c9bc-4a2d-a906-de4b349a191a" />
+
+
+---
+
+## 💡 Data-Driven Business Recommendations
+
+1. **Mileage-Based Procurement Strategy**
+   Given the strong depreciation correlation with mileage (see regression chart), dealers should prioritize buying used vehicles below a key psychological mileage threshold to protect resale margins.
+
+2. **Inventory Portfolio Optimization**
+   Premium brands like Tesla and Mercedes retain high value but serve a narrower market. An optimal inventory mix is roughly **70% high-volume brands** (e.g., Honda, Ford) and **30% premium brands** to balance cash flow with margin.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+Make sure you have Python 3.10+ installed.
+
+### Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/dikrifajar/Python-Projects.git
+cd Python-Projects
+
+# 2. Install dependencies
+pip install -r requirements.txt
+
+# 3. Run the analysis script
+python carprediction.ipynb
+```
+
+Output charts will be saved automatically to the `output/` folder.
+
+---
+
+## 📁 Project Structure
+
+```
+Python-Projects/
+├── data/                           # Raw dataset(s)
+├── output/                         # Auto-generated charts and reports
+├── carprediction.ipynb             # Main analysis script
+├── requirements.txt                # Python dependencies
+└── README.md
+```
+
+---
+
+## 📬 Contact
+
+Made by **Dikri Fajar** — feel free to connect or open an issue if you have questions or suggestions.
