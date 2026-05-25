@@ -197,8 +197,8 @@ Make sure you have Python 3.10+ installed.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/dikrifajar/Python-Projects.git
-cd Python-Projects
+git clone https://github.com/dikrifajar/python-CarAnalysis.git
+cd python-CarAnalysis
 
 # 2. Install dependencies
 pip install -r requirements.txt
