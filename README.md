@@ -197,8 +197,8 @@ Make sure you have Python 3.10+ installed.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/dikrifajar/python-CarAnalysis.git
-cd python-CarAnalysis
+git clone https://github.com/dikrifajar/python-CarPriceAnalysis.git
+cd python-CarPriceAnalysis
 
 # 2. Install dependencies
 pip install -r requirements.txt
